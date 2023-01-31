@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
+import org.hibernate.service.spi.ServiceBinding.ServiceLifecycleOwner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -46,6 +47,14 @@ public class CharacterService {
 		characterRepository.delete(personaje);
 
 	}
+	
+
+	public void deleteId(Long id) {
+		// TODO Auto-generated method stub
+		characterRepository.deleteById(id);
+		
+	}
+	
 	public Optional<Personaje> findById(Long id){
 		return characterRepository.findById(id);
 	}
