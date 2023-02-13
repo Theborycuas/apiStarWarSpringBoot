@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS personaje;
 CREATE TABLE personaje (id serial PRIMARY KEY, name VARCHAR(255), birthyear VARCHAR(255), specie VARCHAR(255), height VARCHAR(255), mass VARCHAR(255), gender VARCHAR(255), haircolor VARCHAR(255), skincolor VARCHAR(255), homeworld VARCHAR(255), image VARCHAR(500));
-INSERT INTO personaje (name, birthyear, specie, height, mass, gender, haircolor, skincolor, homeworld, image) VALUES ('Darth Vader', '41.9BBY', 'Unknown', '202cm', '136kg', 'Male', 'None', 'White', 'Tatooine', '/assets/img/option_1.jpg');
-INSERT INTO personaje (name, birthyear, specie, height, mass, gender, haircolor, skincolor, homeworld, image) VALUES ('Leia Organa', '19BBY', 'Unknown', '150cm', '49kg', 'Female', 'Brown', 'Light', 'Aleraan', '/assets/img/option_2.jpg');
-INSERT INTO personaje (name, birthyear, specie, height, mass, gender, haircolor, skincolor, homeworld, image) VALUES ('Anakin Skywalker', '41.9BBY', 'Unknown', '188cm', '84kg', 'Male', 'Blond', 'Fair', 'Tatooine', '/assets/img/option_3.jpg');
+INSERT INTO personaje (name, birthyear, specie, height, mass, gender, haircolor, skincolor, homeworld, image) VALUES ('Darth Vader', '41.9BBY', 'Unknown', '202cm', '136kg', 'Male', 'None', 'White', 'Tatooine', 'https://upload.wikimedia.org/wikipedia/commons/3/32/Star_Wars_-_Darth_Vader.jpg');
+INSERT INTO personaje (name, birthyear, specie, height, mass, gender, haircolor, skincolor, homeworld, image) VALUES ('Leia Organa', '19BBY', 'Unknown', '150cm', '49kg', 'Female', 'Brown', 'Light', 'Aleraan', 'https://www.lavanguardia.com/files/og_thumbnail/uploads/2017/12/08/5fa3d8e24f841.jpeg');
+INSERT INTO personaje (name, birthyear, specie, height, mass, gender, haircolor, skincolor, homeworld, image) VALUES ('Baby Yoga', '41.9BBY', 'Unknown', '188cm', '84kg', 'Male', 'Blond', 'Fair', 'Tatooine', 'https://en.meming.world/images/en/5/50/Baby_Yoda.jpg');
 
 DROP TABLE IF EXISTS film;
 CREATE TABLE film (id serial PRIMARY KEY, datecreated VARCHAR(255), director VARCHAR(255), openingcrawl VARCHAR(255), producer VARCHAR(255), image VARCHAR(500));
